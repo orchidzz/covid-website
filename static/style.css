@@ -1,0 +1,151 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background: black;
+  overflow-x: hidden;
+}
+
+h2{
+	background: black;
+	color: white;
+	width: 100%;
+	
+}
+h2:after{
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 5px;
+	left: 0px;
+	content: "";
+	background-color: white;
+}
+.input-container{
+	position: absolute;
+    right: 0;
+	top: 75px;
+    width: 25%;
+    height: 30%;
+    border: 0;
+    padding: 0;
+}
+
+#input_note{
+	position: relative;
+	color: white;
+	text-align:center;
+}
+#day-label, #month-label, #year-label{
+	color: white;
+	font-size: 20px;
+}
+#input-btn{
+	position: absolute;
+	color: black;
+	font-size: 20px;
+    width: 100px;
+    height: 25px;
+	
+}
+#day, #month, #year{
+	position: absolute;
+	width: 50px;
+	left: 70px;
+}
+.data-container{
+	position: absolute;
+    right: 0;
+	top: 300px;
+    width: 25%;
+    height: 50%;
+    border: 0;
+    padding: 0;
+	margin: 0;
+}
+#cases-label{
+	position: absolute;
+	color:black;
+	background-color: yellow;
+	opacity: 80%;
+	font-size: 30px;
+	border: 10px solid yellow;
+	top: 10px;
+	width: 150px;
+	text-align: center;
+}
+#recovered-label{
+	position: absolute;
+	color:black;
+	background-color: green;
+	width: 150px;
+	opacity: 60%;
+	top:120px;
+	font-size: 30px;
+	border: 10px solid green;
+	text-align: center;
+}
+#deaths-label{
+	position: absolute;
+	color:black;
+	top: 65px;
+	background-color: red;
+	width: 150px;
+	opacity: 60%;
+	font-size: 30px;
+	border: 10px solid red;
+	text-align: center;
+}
+#cases-output{
+	position: absolute;
+    left: 175px;
+    color: white;
+    font-size: 40px;
+    top: 10px;
+	width: 100%;
+	border: 5px solid yellow;
+}
+#deaths-output{
+	position: absolute;
+    left: 175px;
+    color: white;
+    font-size: 40px;
+    top: 65px;
+	width: 100%;
+	border: 5px solid red;
+}
+#recovered-output{
+	position: absolute;
+    left: 175px;
+    color: white;
+    font-size: 40px;
+    top: 120px;
+	width: 100%;
+	border: 5px solid green;
+}
+.fig-container{
+	position: absolute;
+	left: 0;
+	height: 80%;
+	top: 120px;
+	width: 70%;
+}
+.fig-container div{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow-x: scroll; 
+	overflow-y: scroll;
+	background-color: gray;
+}
+.fig-container div::-webkit-scrollbar{
+	width: 10px;
+	height:10px;
+	background: gray;
+}
+.fig-container div::-webkit-scrollbar-thumb{
+	background: white;
+}
+
