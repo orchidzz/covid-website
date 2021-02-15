@@ -5,7 +5,7 @@ import json
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def initialPlot():
 	return render_template('index.html')
 
