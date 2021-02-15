@@ -8,10 +8,6 @@ from psycopg2 import sql
 #when deployed use, DATABASE_URL
 class Database(object):
 	def __init__(self):
-		#self.host = "ec2-54-156-149-189.compute-1.amazonaws.com"
-		#self.user = "aiuvygipuvhbfl"
-		#self.password = "cd0e7b32b483f61d0d8edca57b7c7daff27c02a34094fb44819641a0adcbe496"
-		#self.database = "dbjuhcfii9l4ud"
 		
 		self.host = os.getenv("HOSTNAME")
 		self.user = os.getenv("USERNAME")
